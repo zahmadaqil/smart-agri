@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture Monitoring System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="text-lg font-bold">Smart Agri</div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header class="text-center py-12">
+            <h1 class="text-4xl font-bold">Smart Agriculture Monitoring System</h1>
+            <p class="mt-4 text-gray-700">Your companion for managing and monitoring agricultural activities.</p>
+        </header>
+
+        <!-- Carousel Section -->
+        <section class="section">
+            <h2>Our Plants</h2>
+            <div class="carousel">
+                <img src="https://via.placeholder.com/800x300.png?text=Mango+Tree" alt="Mango Tree">
+                <img src="https://via.placeholder.com/800x300.png?text=Papaya+Tree" alt="Papaya Tree">
+                <img src="https://via.placeholder.com/800x300.png?text=Banana+Tree" alt="Banana Tree">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section class="section text-center">
+            <a href="dashboard.html" class="button">Explore Full Dashboard</a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Smart Agri. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
