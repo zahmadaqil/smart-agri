@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture Monitoring System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <nav class="bg-blue-600 text-white p-4 flex justify-between items-center">
+        <div class="text-lg font-bold">Smart Agri</div>
+        <div>
+            <a href="dashboard.html" class="bg-white text-blue-600 px-4 py-2 rounded">Go to Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto p-6">
+        <header class="text-center py-6">
+            <h1 class="text-3xl font-bold">Smart Agriculture Monitoring System</h1>
+            <p class="mt-2 text-gray-700">Your companion for managing and monitoring agricultural activities.</p>
+        </header>
+
+        <main class="bg-white shadow-lg rounded-lg p-6">
+            <section id="overview">
+                <h2 class="text-xl font-semibold mb-4">Farm Overview</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <!-- Total Sections Counter -->
+                    <div class="bg-blue-100 p-6 rounded-lg shadow text-center">
+                        <h3 class="text-lg font-semibold">Total Sections</h3>
+                        <p class="text-4xl font-bold mt-2" id="totalSections">3</p>
+                    </div>
+                    <!-- Total Trees Counter -->
+                    <div class="bg-green-100 p-6 rounded-lg shadow text-center">
+                        <h3 class="text-lg font-semibold">Total Trees</h3>
+                        <p class="text-4xl font-bold mt-2" id="totalTrees">30</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="call-to-action" class="mt-6 text-center">
+                <a href="dashboard.html" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+                    Explore Full Dashboard
+                </a>
+            </section>
+
+            <section id="plant-carousel" class="mt-6">
+                <h2 class="text-xl font-semibold mb-4">Our Plants</h2>
+                <div class="carousel">
+                    <img src="https://via.placeholder.com/800x300.png?text=Mango+Tree" alt="Mango Tree">
+                    <img src="https://via.placeholder.com/800x300.png?text=Papaya+Tree" alt="Papaya Tree">
+                    <img src="https://via.placeholder.com/800x300.png?text=Banana+Tree" alt="Banana Tree">
+                </div>
+                <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+            </section>
+
+        </main>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
